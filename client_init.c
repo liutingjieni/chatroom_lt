@@ -11,7 +11,7 @@
 #include <stdlib.h>
 #include <arpa/inet.h>
 
-#define IP "192.168.3.5"
+#define IP "127.0.0.1"
 
 #define PORT 8888 
 
