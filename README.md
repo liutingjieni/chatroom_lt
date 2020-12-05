@@ -11,11 +11,11 @@
 - 本项目基于C/S模型设计，分为客户端和服务器端两个部分，客户端直接连接到服务器，与服务器双向交换数据，服务器端用于接收客户端发来的消息，并转发给目标用户，所有数据的持久化工作也均由服务器端完成
 - 服务端基于reactor模型, 采用epoll单线程模型
 
-![](/home/lt/Desktop/深度截图_选择区域_20201205221414.png)
+![image](https://github.com/liutingjieni/chatroom_lt/blob/master/images/%E6%B7%B1%E5%BA%A6%E6%88%AA%E5%9B%BE_%E9%80%89%E6%8B%A9%E5%8C%BA%E5%9F%9F_20201205221414.png)
 
 - 客户端分为两个线程, 一个负责完成与用户的交互, 发送请求给服务器, 另一个线程负责完成接受其余客户端发送的由服务端转发的消息完成实时聊天功能
 
-  ![](/home/lt/Desktop/深度截图_选择区域_20201205221422.png)
+  ![image](https://github.com/liutingjieni/chatroom_lt/blob/master/images/%E6%B7%B1%E5%BA%A6%E6%88%AA%E5%9B%BE_%E9%80%89%E6%8B%A9%E5%8C%BA%E5%9F%9F_20201205221422.png)
  
 
 3. 文件说明
