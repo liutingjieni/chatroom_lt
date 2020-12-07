@@ -49,5 +49,12 @@ gcc server.c server_deal.c server_init.c MYSQL.c -I/usr/include/mysql/ -lmysqlcl
 gcc client.c client_init.c client_io.c client_menu.c -lpthread
 ./a.out
 ```
+数据库安装说明
+```
+sudo mysql -u root -p password
+进入数据库后
+source chatroom.sql
+并且在MYSQL.c的MYSQL_init()中mysql_real_connect()函数中改变第三个参数为用户名, 第二个参数为密码
+```
 
 提示：如果要进行跨级测试，请务必改变client_init.c 文件中#define IP "服务器IP地址"
